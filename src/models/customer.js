@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const customerScchema = new mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+        required:true
+    },
     industry: String
 });
-module.exports = mongoose.model('Customer',customerScchema);
+module.exports = mongoose.model('Clients',customerScchema);
