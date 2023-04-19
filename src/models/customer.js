@@ -1,0 +1,6 @@
+const mongoose = require('mongoose');
+const customerScchema = new mongoose.Schema({
+    name: String,
+    industry: String
+});
+module.exports = mongoose.model('Customer',customerScchema);
